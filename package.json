@@ -1,0 +1,36 @@
+{
+  "name": "dutch-auction-game",
+  "version": "1.0.0",
+  "description": "Dutch auction game with integrated client and server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "start:cluster": "node cluster.js",
+    "start:cluster-opt": "node cluster-optimized.js",
+    "dev": "node dev-server.js",
+    "dev:force": "node start-dev.js",
+    "dev:watch": "nodemon server.js",
+    "kill-port": "node kill-port.js",
+    "kill-port:win": "kill-port-win.bat",
+    "build": "vite build",
+    "build:dev": "vite"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "framer-motion": "^11.2.12",
+    "ini": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "nodemon": "^3.1.4",
+    "vite": "^5.3.3"
+  }
+}

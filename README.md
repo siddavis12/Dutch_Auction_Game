@@ -89,6 +89,35 @@ npm run start:cluster-opt  # 최적화된 클러스터 모드 (500+ 사용자)
 - **동기화된 애니메이션**: 심장박동에 맞춰 움직이는 UI 요소
 - **로그 기록**: 모든 활동이 자동으로 기록됨
 
+## 🛠️ 기술 스택
+
+### 백엔드
+- **Node.js** (16.0.0+): JavaScript 런타임 환경
+- **Express.js**: 웹 서버 프레임워크
+- **Socket.io**: 실시간 양방향 통신
+- **cluster**: 멀티코어 프로세싱 지원
+- **ini**: 설정 파일 관리
+
+### 프론트엔드
+- **React**: 사용자 인터페이스 라이브러리
+- **Vite**: 빠른 빌드 도구 및 개발 서버
+- **Socket.io-client**: 실시간 서버 통신
+- **styled-components**: CSS-in-JS 스타일링
+- **Framer Motion**: 애니메이션 및 트랜지션
+
+### 오디오
+- **Web Audio API**: 브라우저 네이티브 오디오 처리
+- **프로시저럴 오디오**: 실시간 사운드 생성 (심장박동 등)
+
+### 개발 도구
+- **nodemon**: 개발 시 자동 서버 재시작
+- **JSON 로깅**: 구조화된 로그 시스템
+
+### 인프라
+- **Sticky Sessions**: 클러스터 모드에서 WebSocket 안정성
+- **CORS**: 크로스 오리진 리소스 공유
+- **Static File Serving**: Express를 통한 정적 파일 제공
+
 ## 🔧 시스템 요구사항
 
 - **Node.js**: 16.0.0 이상
